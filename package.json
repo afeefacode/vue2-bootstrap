@@ -1,0 +1,27 @@
+{
+  "name": "@afeefa/vue2-bootstrap",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "./npm-serve.sh",
+    "build": "./npm-build.sh",
+    "build-lib": "./npm-build-lib.sh"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-proposal-decorators": "^7.12.13",
+    "@vue/cli-plugin-babel": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
+    "core-js": "^3.9.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
