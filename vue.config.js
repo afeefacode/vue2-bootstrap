@@ -8,6 +8,8 @@ const appConfig = require(pathAppConfig)
 const vueConfig = {
   publicPath: appConfig.publicPath || undefined,
 
+  outputDir: path.resolve(pathApp, appConfig.outputDir),
+
   runtimeCompiler: true,
 
   productionSourceMap: process.env.NODE_ENV !== 'production',

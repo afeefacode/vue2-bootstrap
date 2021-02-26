@@ -3,6 +3,8 @@ module.exports = {
 
   sockPath: '/vue/sockjs-node',
 
+  outputDir: 'dist',
+
   aliases: {
     // shared: path.resolve(__dirname, 'node_modules/@afeefa/shared-js-lib')
   },
