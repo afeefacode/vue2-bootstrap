@@ -30,6 +30,8 @@ const vueConfig = {
   },
 
   configureWebpack: {
+    devtool: appConfig.devtool,
+
     plugins: [
       ...appConfig.plugins
     ],
