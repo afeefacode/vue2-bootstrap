@@ -4,7 +4,8 @@
   "scripts": {
     "serve": "./npm-serve.sh",
     "build": "./npm-build.sh",
-    "build-lib": "./npm-build-lib.sh"
+    "build-lib": "./npm-build-lib.sh",
+    "inspect": "./npm-inspect.sh"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.12.13",
