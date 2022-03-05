@@ -8,17 +8,18 @@
     "inspect": "./npm-inspect.sh"
   },
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.12.13",
-    "@babel/plugin-proposal-decorators": "^7.12.13",
-    "@vue/cli-plugin-babel": "^4.5.11",
-    "@vue/cli-service": "^4.5.11",
-    "core-js": "^3.9.0",
-    "sass": "^1.32.8",
-    "sass-loader": "^10.1.1",
-    "vue": "^2.6.12",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.17.2",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+    "@vue/cli-plugin-babel": "^5.0.1",
+    "@vue/cli-service": "^5.0.1",
+    "core-js": "^3.21.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "vue": "^3.2.31",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.14"
   },
   "browserslist": [
     "> 1%",
