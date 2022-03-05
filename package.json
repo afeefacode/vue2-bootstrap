@@ -1,6 +1,6 @@
 {
   "name": "@afeefa/vue2-bootstrap",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "scripts": {
     "serve": "./npm-serve.sh",
     "build": "./npm-build.sh",
