@@ -21,11 +21,22 @@ const vueConfig = {
   ],
 
   devServer: {
-    public: '0.0.0.0',
-    disableHostCheck: true,
-    sockPath: appConfig.sockPath || undefined,
-    watchOptions: {
-      poll: process.platform !== 'linux'
+    allowedHosts: 'all',
+
+    webSocketServer: {
+      type: 'sockjs',
+      options: {
+        path: appConfig.sockPath || undefined
+      }
+    },
+
+    client: {
+      webSocketTransport: 'sockjs',
+      webSocketURL: {
+        hostname: '0.0.0.0',
+        port: 443,
+        pathname: appConfig.sockPath || undefined
+      }
     }
   },
 
