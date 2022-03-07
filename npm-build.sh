@@ -1,1 +1,1 @@
-vue-cli-service build $INIT_CWD/src/main.js
+vue-cli-service build --no-module $INIT_CWD/src/main.js
