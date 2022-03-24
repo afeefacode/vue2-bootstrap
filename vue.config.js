@@ -87,6 +87,12 @@ const vueConfig = {
     extract: appConfig.extractCss || false,
 
     loaderOptions: {
+      css: {
+        // https://webpack.js.org/loaders/css-loader/#url
+        // allows absolute paths in url() functions
+        url: false
+      },
+
       scss: {
         // @/ is an alias to src/
         // so this assumes you have a file named `src/variables.scss`
