@@ -90,7 +90,11 @@ const vueConfig = {
       css: {
         // https://webpack.js.org/loaders/css-loader/#url
         // allows absolute paths in url() functions
-        url: false
+        url: {
+          filter: url => {
+            return !url.startsWith('/')
+          }
+        }
       },
 
       scss: {
