@@ -81,6 +81,12 @@ const vueConfig = {
     if (!appConfig.splitChunks) {
       config.optimization.delete('splitChunks')
     }
+
+    // https://github.com/webpack/webpack-dev-server/issues/3453
+    // webpack caches all node_module folder otherwise
+    config.snapshot = {
+      managedPaths: []
+    }
   },
 
   css: {
