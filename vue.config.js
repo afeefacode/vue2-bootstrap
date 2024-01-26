@@ -105,6 +105,14 @@ const vueConfig = {
         }
       },
 
+      // ignore deprecation warnings which e.g. is vuetify full of
+      // sassLoaderOptions: {
+      //   warnRuleAsWarning: false
+      // },
+      sass: {
+        ...appConfig.sassLoaderOptions
+      },
+
       scss: {
         // @/ is an alias to src/
         // so this assumes you have a file named `src/variables.scss`
