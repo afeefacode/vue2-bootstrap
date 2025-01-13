@@ -36,6 +36,18 @@ const vueConfig = {
         hostname: '0.0.0.0',
         port: 443,
         pathname: appConfig.sockPath || undefined
+      },
+
+      overlay: { // https://webpack.js.org/configuration/dev-server/#overlay
+        errors: true, // compilation errors
+        warnings: false, // compilation warnings
+        runtimeErrors: error => {
+          console.log(error)
+          const ignoreErrors = [
+            'ResizeObserver loop completed with undelivered notifications.'
+          ]
+          return !ignoreErrors.includes(error.message)
+        }
       }
     }
   },
