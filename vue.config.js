@@ -42,7 +42,7 @@ const vueConfig = {
         errors: true, // compilation errors
         warnings: false, // compilation warnings
         runtimeErrors: error => {
-          console.log(error)
+          // console.log(error)
           const ignoreErrors = [
             'ResizeObserver loop completed with undelivered notifications.'
           ]
