@@ -1,6 +1,10 @@
 {
   "name": "@afeefa/vue2-bootstrap",
   "version": "1.0.23",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeefacode/vue2-bootstrap"
+  },
   "scripts": {
     "serve": "./npm-serve.sh",
     "build": "./npm-build.sh",
