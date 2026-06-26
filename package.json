@@ -11,7 +11,7 @@
     "build-lib": "./npm-build-lib.sh",
     "inspect": "./npm-inspect.sh"
   },
-  "$comment-webpack": "webpack auf 5.107.2 gepinnt: vuetify-loader@1.9.2 (Vuetify 2, seit 2021 nicht mehr gewartet) ist mit dem verschaerften Tree-Shaking ab webpack 5.108 inkompatibel - die A-la-carte-CSS-Imports der Vuetify-Komponenten werden als side-effect-free rausgeshaked, wodurch das gesamte Vuetify-Framework-CSS aus dem Bundle faellt (nur Vuetify betroffen, nicht tiptap/eigene Styles). Pin entfaellt mit der Migration auf Vuetify 3 + webpack-plugin-vuetify.",
+  "$comment-webpack": "webpack als peerDependency auf 5.107.2 gepinnt: vuetify-loader@1.9.2 (Vuetify 2, seit 2021 nicht mehr gewartet) ist mit dem verschaerften Tree-Shaking ab webpack 5.108 inkompatibel - die A-la-carte-CSS-Imports der Vuetify-Komponenten werden als side-effect-free rausgeshaked, wodurch das gesamte Vuetify-Framework-CSS aus dem Bundle faellt (nur Vuetify betroffen, nicht tiptap/eigene Styles). Als peerDependency (nicht dependency!) setzt sich der Pin gegen die ^5.0.0-Constraints von cli-service/vuetify-loader durch und greift in allen konsumierenden Projekten ohne projekt-lokale overrides. Pin entfaellt mit der Migration auf Vuetify 3 + webpack-plugin-vuetify.",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-decorators": "^7.23.9",
@@ -25,7 +25,9 @@
     "vue": "^2.7.16",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2",
-    "vue-template-compiler": "^2.7.16",
+    "vue-template-compiler": "^2.7.16"
+  },
+  "peerDependencies": {
     "webpack": "5.107.2"
   },
   "browserslist": [
